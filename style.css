@@ -198,3 +198,124 @@ body {
 
     color: #444444;
 }
+
+.cards__container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 22px;
+    margin-bottom: 16px;
+}
+
+.cards__container__card {
+    position: relative;
+    width: 250px;
+    height: 381px;
+
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+}
+
+.card__image {
+    position: relative;
+    width: 250px;
+    height: 234px;
+    left: -1px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card__favorite-image {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: -224px;
+    left: 213px;
+}
+
+.card__title {
+    position: relative;
+    width: fit-content;
+    height: 18px;
+    left: 11px;
+    top: -14px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+
+    color: #424141;
+}
+
+.card__seller {
+    position: relative;
+    width: fit-content;
+    height: 18px;
+    left: 12px;
+    top: -7px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+
+    color: #89817F;
+}
+
+.card__button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    right: -176px;
+    top: 12px;
+}
+
+.card__price {
+    position: relative;
+    width: fit-content;
+    height: 18px;
+    left: 13px;
+    top: -19px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    margin: 0;
+
+    color: #3D3C3C;
+}
+
+.card__weight {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.card__rating-container {
+    position: relative;
+    width: 83px;
+    height: 10px;
+    top: -10px;
+    left: 12px;
+}
+
+.card__rating-container__star {
+    position: relative;
+}
