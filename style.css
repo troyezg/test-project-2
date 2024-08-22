@@ -11,6 +11,10 @@ body {
     align-items: center;
 }
 
+p {
+    margin: 0;
+}
+
 .main-header {
     position: relative;
     width: 1066px;
@@ -65,7 +69,7 @@ body {
 }
 
 .block_hidden {
-    position: absolute;
+    position: absolute !important;
     visibility: hidden;
     pointer-events: none;
 }
@@ -318,4 +322,148 @@ body {
 
 .card__rating-container__star {
     position: relative;
+}
+
+.reviews-block {
+    position: relative;
+    width: 1066px;
+    height: fit-content;
+    padding-top: 53px;
+}
+
+.reviews-block__content {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.reviews-block__content__text {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 !important;
+
+    color: #444444;
+    mix-blend-mode: normal;
+}
+
+.reviews-block__content__button {
+    position: relative;
+    width: 184px;    
+    height: 40px;
+    background-color: #429F3A;
+    border: none;
+    border-radius: 5px;
+}
+
+.reviews-block__content__button__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.where-block {
+    position: relative;
+    width: 1066px;
+    height: fit-content;
+    padding-top: 49px;
+}
+
+.where-block__content {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.where-block__content__text {
+    position: relative;
+    width: 511px;
+    height: 339px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+
+    color: #444444;
+}
+
+.seller-info-block {
+    position: relative;
+    width: 376px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.seller-info-block__image {
+    position: relative;
+    width: auto;
+    height: auto;
+    left: -10px;
+
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.08));
+    border-radius: 5px;
+}
+
+.seller-info-block__button-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.seller-info-block__button-block__button {
+    box-sizing: border-box;
+
+    position: relative;
+    width: 184px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #FFFFFF;
+    border: 0.5px solid #444444;
+    border-radius: 5px;
+}
+
+.seller-info-block__button-block__button__text {
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #444444;
 }
