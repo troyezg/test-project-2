@@ -150,6 +150,18 @@ p {
     color: #444444;
 }
 
+.block__title__mobile {
+    display: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+
+    color: #444444;
+}
+
 .block__container {
     position: relative;
     width: 100%;
@@ -224,7 +236,7 @@ p {
 .cards__container {
     position: relative;
     width: 100%;
-    height: fit-content;
+    height: 381px;
 
     display: flex;
     flex-direction: row;
@@ -302,6 +314,23 @@ p {
     background-color: transparent;
     right: -176px;
     top: 12px;
+}
+
+.card__button__mobile-text {
+    display: none;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+
+    color: #429F3A;
+}
+
+.card__button__mobile-image {
+    display: none;
 }
 
 .card__price {
@@ -544,6 +573,18 @@ p {
         overflow: hidden;
     }
 
+    .cards__container {
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        overflow: -moz-scrollbars-none;
+    }
+
+    .card-container::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+
     .reviews-block {
         width: 95%;
     }
@@ -639,8 +680,117 @@ p {
         line-height: 20px;
     }
 
+    .block__title {
+        display: none;
+    }
+
+    .block__title__mobile {
+        display: inline;
+    }
+
+    .block__container__text {
+        font-size: 14px;
+    }
+
+    .specs-block {
+        gap: 12px;
+        margin-bottom: 3px;
+    }
+
+    .nutritional-block {
+        gap: 15px;
+        margin-bottom: 3px;
+    }
+
     .storage-block {
-        margin-bottom: 9px;
+        margin-bottom: 12px;
+    }
+
+    .cards-block__title {
+        font-size: 18px;
+    }
+
+    .cards__container {
+        height: fit-content;
+    }
+
+    .cards__container__card {
+        width: 288px;
+        height: 190px;
+    }
+
+    .card__image {
+        width: 100px;
+        height: 94px;
+        margin: 28px 186px 68px 2px;
+        border-radius: 8px;
+        top: 0;
+        left: 0;
+    }
+
+    .card__favorite-image {
+        display: none;
+    }
+
+    .card__title {
+        position: absolute;
+        left: 105px;
+        top: 27px;
+        width: 182px;
+        font-size: 15px;
+    }
+
+    .card__seller {
+        position: absolute;
+        left: 105px;
+        top: 52px;
+        width: 120px;
+        font-size: 11px;
+    }
+
+    .card__button {
+        width: 160px;
+        height: 46px;
+        top: -71px;
+        left: 108px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 19px;
+
+        background: #FFFFFF;
+        border: 0.7px solid #DEDEDE;
+        border-radius: 5px;
+    }
+
+    .card__button__image {
+        display: none;
+    }
+
+    .card__button__mobile-text {
+        display: inline;
+    }
+
+    .card__button__mobile-image {
+        display: block;
+    }
+
+    .card__price {
+        top: -149px;
+        left: 179px;
+        font-size: 18px;
+    }
+
+    .card__weight {
+        font-size: 13px;
+        color: #000;
+    }
+
+    .card__rating-container {
+        display: none;
     }
 
     .block__text__pc-only {
